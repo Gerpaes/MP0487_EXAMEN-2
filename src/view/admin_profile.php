@@ -154,7 +154,11 @@ require_once '../controller/ShowEventInformation.php';
 
                 <?php showEventNames(); ?>
 
+                <label for="eventName">Eliminar el evento:</label>
+                <input type="text" id="eventname" name="eventname" required>
+
                 <input type="submit" value="Eliminar Evento" name="deleteEvent" required>
+                
             </form>
         </div>
     </div>
