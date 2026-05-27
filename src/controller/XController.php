@@ -124,7 +124,7 @@ class AdminController
     {
         $eventName = $_POST['eventname'];
         // Manejo de errores de parte del servidor.
-        if (!empty($eventName)) {
+        if (empty($eventName)) {
             $_SESSION['error_message'] = "Todos los campos son obligatorios.";
             header('Location: ../view/admin_profile.php');
             exit();
